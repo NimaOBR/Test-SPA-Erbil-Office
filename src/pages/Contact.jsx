@@ -31,7 +31,7 @@ const Contact = () => {
 
   const contactInfo = [
     { icon: '📍', title: t('ourLocation'), details: ['German Bazar, Erbil', 'Kurdistan Region, Iraq'] },
-    { icon: '📞', title: t('phoneNumbers'), details: ['0750 856 7733', '0750 856 7733'] },
+    { icon: '📞', title: t('phoneNumbers'), details: ['+964 750 424 3524', '+964 750 424 3524'] },
     { icon: '✉️', title: t('emailAddress'), details: ['Info@paytakhtinstitute.con'] },
     { icon: '⏰', title: t('workingHours'), details: [t('workingDays'), t('workingTime')] },
   ];
