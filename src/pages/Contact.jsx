@@ -32,7 +32,7 @@ const Contact = () => {
   const contactInfo = [
     { icon: '📍', title: t('ourLocation'), details: ['German Bazar, Erbil', 'Kurdistan Region, Iraq'] },
     { icon: '📞', title: t('phoneNumbers'), details: ['+964 750 424 3524', '+964 750 424 3524'] },
-    { icon: '✉️', title: t('emailAddress'), details: ['Info@paytakhtinstitute.con'] },
+    { icon: '✉️️', title: t('emailAddress'), details: ['Info@paytakhtinstitute.con'] },
     { icon: '⏰', title: t('workingHours'), details: [t('workingDays'), t('workingTime')] },
   ];
 
@@ -49,7 +49,7 @@ const Contact = () => {
             <motion.p className="text-gray-600 max-w-2xl mx-auto">
               {t('contactSubtitle')}
             </motion.p>
-            <div className="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full" />
+            <div className="w-16 h-1 bg-emerald-500 mx-auto mt-4 rounded-full" />
           </div>
 
           <div className="grid lg:grid-cols-5 gap-10">
@@ -62,7 +62,7 @@ const Contact = () => {
                   animate={{ opacity: 1, x: 0 }}
                   className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex items-start gap-4"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center flex-shrink-0 text-2xl">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0 text-2xl">
                     {item.icon}
                   </div>
                   <div>
@@ -100,7 +100,7 @@ const Contact = () => {
                           required
                           value={formData.name}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
+                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all"
                           placeholder={t('yourName')}
                         />
                       </div>
@@ -114,7 +114,7 @@ const Contact = () => {
                           required
                           value={formData.email}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
+                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all"
                           placeholder="you@example.com"
                         />
                       </div>
@@ -130,7 +130,7 @@ const Contact = () => {
                           name="phone"
                           value={formData.phone}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
+                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all"
                           placeholder="07xx xxx xxxx"
                         />
                       </div>
@@ -144,7 +144,7 @@ const Contact = () => {
                           required
                           value={formData.subject}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
+                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all"
                           placeholder={t('howCanHelp')}
                         />
                       </div>
@@ -160,7 +160,7 @@ const Contact = () => {
                         rows={5}
                         value={formData.message}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all resize-none"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all resize-none"
                         placeholder={t('writeMessage')}
                       />
                     </div>
@@ -170,7 +170,7 @@ const Contact = () => {
                     <button
                       type="submit"
                       disabled={isLoading}
-                      className="w-full bg-amber-500 hover:bg-amber-600 disabled:bg-amber-300 text-white font-semibold py-3.5 rounded-xl transition-colors shadow-lg shadow-amber-200"
+                      className="w-full bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 text-white font-semibold py-3.5 rounded-xl transition-colors shadow-lg shadow-emerald-200"
                     >
                       {isLoading ? 'در حال ارسال...' : t('sendBtn')}
                     </button>

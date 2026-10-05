@@ -28,8 +28,7 @@ const Navbar = () => {
       path: '/activities',
       dropdown: [
         { name: t('academicActivities'), path: '/activities/academic' },
-        { name: t('studentActivities'), path: '/activities/student' },
-        { name: t('events'), path: '/activities/events' },
+
       ],
     },
     { name: t('contact'), path: '/contact' },
@@ -41,7 +40,7 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50">
       
       {/* ========== TOP BAR ========== */}
-      <div className="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-500 text-white text-sm shadow-sm">
+      <div className="bg-gradient-to-r from-emerald-600 via-green-500 to-emerald-600 text-white text-sm shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex flex-wrap items-center justify-between gap-y-2">
           
           {/* Left */}
@@ -119,7 +118,7 @@ const Navbar = () => {
                           setLangOpen(false);
                         }}
                         className={`w-full text-left px-4 py-2.5 flex items-center gap-2.5 text-sm transition-colors ${
-                          lang === l.code ? 'bg-amber-50 text-amber-700 font-semibold' : 'hover:bg-gray-50'
+                          lang === l.code ? 'bg-emerald-50 text-emerald-700 font-semibold' : 'hover:bg-gray-50'
                         }`}
                       >
                         <span className="text-lg">{l.flag}</span>
@@ -167,13 +166,13 @@ const Navbar = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
               <div className="relative">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 via-yellow-500 to-orange-500 flex items-center justify-center shadow-lg shadow-amber-200 group-hover:shadow-amber-300 transition-shadow duration-300">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-500 via-green-600 to-teal-700 flex items-center justify-center shadow-lg shadow-emerald-200 group-hover:shadow-emerald-300 transition-shadow duration-300">
                   <span className="text-white font-black text-sm tracking-tighter">PTI</span>
                 </div>
-                <div className="absolute -inset-1 rounded-full border-2 border-amber-300/50 group-hover:border-amber-400 transition-colors duration-300"></div>
+                <div className="absolute -inset-1 rounded-full border-2 border-emerald-300/50 group-hover:border-emerald-400 transition-colors duration-300"></div>
               </div>
               <div className="hidden sm:block">
-                <div className="font-bold text-gray-900 text-[15px] leading-tight tracking-tight group-hover:text-amber-600 transition-colors">
+                <div className="font-bold text-gray-900 text-[15px] leading-tight tracking-tight group-hover:text-emerald-600 transition-colors">
                   PAITAXT
                 </div>
                 <div className="text-[11px] text-gray-500 font-medium tracking-wide">
@@ -190,7 +189,7 @@ const Navbar = () => {
                     <>
                       <button
                         className={`px-4 py-2.5 rounded-lg text-[15px] font-medium transition-all duration-300 flex items-center gap-1.5 ${
-                          isActive(link.path) ? 'text-amber-600 bg-amber-50' : 'text-gray-700 hover:text-amber-600 hover:bg-amber-50/70'
+                          isActive(link.path) ? 'text-emerald-600 bg-emerald-50' : 'text-gray-700 hover:text-emerald-600 hover:bg-emerald-50/70'
                         }`}
                       >
                         {link.name}
@@ -203,7 +202,7 @@ const Navbar = () => {
                           <Link
                             key={item.path}
                             to={item.path}
-                            className="block px-4 py-2.5 text-sm text-gray-600 hover:text-amber-600 hover:bg-amber-50 transition-colors mx-1 rounded-lg"
+                            className="block px-4 py-2.5 text-sm text-gray-600 hover:text-emerald-600 hover:bg-emerald-50 transition-colors mx-1 rounded-lg"
                           >
                             {item.name}
                           </Link>
@@ -214,14 +213,14 @@ const Navbar = () => {
                     <Link
                       to={link.path}
                       className={`relative px-4 py-2.5 rounded-lg text-[15px] font-medium transition-all duration-300 ${
-                        isActive(link.path) ? 'text-amber-600 bg-amber-50' : 'text-gray-700 hover:text-amber-600 hover:bg-amber-50/70'
+                        isActive(link.path) ? 'text-emerald-600 bg-emerald-50' : 'text-gray-700 hover:text-emerald-600 hover:bg-emerald-50/70'
                       }`}
                     >
                       {link.name}
                       {isActive(link.path) && (
                         <motion.div
                           layoutId="activeTab"
-                          className="absolute bottom-0 left-3 right-3 h-0.5 bg-amber-500 rounded-full"
+                          className="absolute bottom-0 left-3 right-3 h-0.5 bg-emerald-500 rounded-full"
                         />
                       )}
                     </Link>
@@ -263,7 +262,7 @@ const Navbar = () => {
                       <>
                         <button
                           onClick={() => setActivitiesOpen(!activitiesOpen)}
-                          className="w-full flex items-center justify-between py-3 px-3 rounded-xl text-gray-700 font-medium hover:bg-amber-50 transition-colors"
+                          className="w-full flex items-center justify-between py-3 px-3 rounded-xl text-gray-700 font-medium hover:bg-emerald-50 transition-colors"
                         >
                           {link.name}
                           <svg className={`w-4 h-4 transition-transform duration-300 ${activitiesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -284,7 +283,7 @@ const Navbar = () => {
                                     key={item.path}
                                     to={item.path}
                                     onClick={() => setIsOpen(false)}
-                                    className="block py-2.5 px-3 text-sm text-gray-600 hover:text-amber-600 hover:bg-amber-50 rounded-lg transition-colors"
+                                    className="block py-2.5 px-3 text-sm text-gray-600 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors"
                                   >
                                     {item.name}
                                   </Link>
@@ -299,7 +298,7 @@ const Navbar = () => {
                         to={link.path}
                         onClick={() => setIsOpen(false)}
                         className={`block py-3 px-3 rounded-xl font-medium transition-colors ${
-                          isActive(link.path) ? 'bg-amber-50 text-amber-600' : 'text-gray-700 hover:bg-amber-50 hover:text-amber-600'
+                          isActive(link.path) ? 'bg-emerald-50 text-emerald-600' : 'text-gray-700 hover:bg-emerald-50 hover:text-emerald-600'
                         }`}
                       >
                         {link.name}

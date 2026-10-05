@@ -65,9 +65,9 @@ const AcademicActivities = () => {
   return (
     <div className="pt-32 pb-20 bg-gray-50 min-h-screen">
       <SEO 
-      title="Academic Activities"
-      description="Success stories and academic achievements of students and graduates of Paitaxt Technical Institute."
-    />
+        title="Academic Activities"
+        description="Success stories and academic achievements of students and graduates of Paitaxt Technical Institute."
+      />
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
           <motion.h1
@@ -85,7 +85,7 @@ const AcademicActivities = () => {
           >
             {t('academicSubtitle')}
           </motion.p>
-          <div className="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full" />
+          <div className="w-16 h-1 bg-emerald-500 mx-auto mt-4 rounded-full" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -111,20 +111,20 @@ const AcademicActivities = () => {
                     {story.overlayText}
                   </h3>
                 </div>
-                <span className="absolute top-4 left-4 bg-amber-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                <span className="absolute top-4 left-4 bg-emerald-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
                   {story.category}
                 </span>
               </div>
 
               <div className="p-6">
-                <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-amber-600 transition-colors">
+                <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
                   {story.title}
                 </h2>
                 <p className="text-gray-600 text-sm leading-relaxed mb-5 line-clamp-3">
                   {story.excerpt}
                 </p>
                 <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                  <button className="text-amber-600 font-medium text-sm hover:text-amber-700 transition-colors flex items-center gap-1">
+                  <button className="text-emerald-600 font-medium text-sm hover:text-emerald-700 transition-colors flex items-center gap-1">
                     {t('readMore')}
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

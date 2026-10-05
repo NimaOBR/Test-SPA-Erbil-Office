@@ -13,7 +13,7 @@ const DepartmentDetail = () => {
         return (
             <div className="pt-40 pb-20 text-center">
                 <h1 className="text-2xl font-bold text-gray-800">Department not found</h1>
-                <Link to="/departments" className="text-amber-600 mt-4 inline-block">
+                <Link to="/departments" className="text-emerald-600 mt-4 inline-block hover:underline">
                     ← Back to Departments
                 </Link>
             </div>
@@ -50,7 +50,7 @@ const DepartmentDetail = () => {
                         <span className="text-5xl">{dept.icon}</span>
                         <div>
                             <h1 className="text-3xl md:text-4xl font-bold text-white">{getText(dept.name)}</h1>
-                            <p className="text-amber-300 mt-1">Paitaxt Technical Institute</p>
+                            <p className="text-emerald-300 mt-1">Paitaxt Technical Institute</p>
                         </div>
                     </div>
                 </div>
@@ -62,14 +62,14 @@ const DepartmentDetail = () => {
                     {/* Sidebar */}
                     <aside className="lg:col-span-1">
                         <div className="sticky top-32 bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
-                            <div className="h-1 bg-amber-500 rounded-full mb-5" />
+                            <div className="h-1 bg-emerald-500 rounded-full mb-5" />
                             <h3 className="text-xs font-semibold text-gray-400 tracking-wider mb-4">ON THIS PAGE</h3>
                             <nav className="space-y-1">
                                 {sections.map((sec) => (
                                     <a
                                         key={sec.id}
                                         href={`#${sec.id}`}
-                                        className="block px-3 py-2 rounded-lg text-sm text-gray-600 hover:bg-amber-50 hover:text-amber-700 transition-colors"
+                                        className="block px-3 py-2 rounded-lg text-sm text-gray-600 hover:bg-emerald-50 hover:text-emerald-700 transition-colors"
                                     >
                                         {sec.title}
                                     </a>
@@ -86,10 +86,10 @@ const DepartmentDetail = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="bg-orange-50/60 border-l-4 border-amber-500 rounded-r-2xl p-6 md:p-8"
+                            className="bg-emerald-50/60 border-l-4 border-emerald-500 rounded-r-2xl p-6 md:p-8"
                         >
-                            <h2 className="text-xl font-bold text-amber-700 mb-4 flex items-center gap-2">
-                                <span className="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center text-sm">★</span>
+                            <h2 className="text-xl font-bold text-emerald-800 mb-4 flex items-center gap-2">
+                                <span className="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center text-sm">★</span>
                                 Department Description
                             </h2>
                             <p className="text-gray-700 leading-relaxed">{getText(dept.description)}</p>
@@ -100,10 +100,10 @@ const DepartmentDetail = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="bg-orange-50/60 border-l-4 border-amber-500 rounded-r-2xl p-6 md:p-8"
+                            className="bg-emerald-50/60 border-l-4 border-emerald-500 rounded-r-2xl p-6 md:p-8"
                         >
-                            <h2 className="text-xl font-bold text-amber-700 mb-4 flex items-center gap-2">
-                                <span className="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center text-sm">★</span>
+                            <h2 className="text-xl font-bold text-emerald-800 mb-4 flex items-center gap-2">
+                                <span className="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center text-sm">★</span>
                                 Department Vision
                             </h2>
                             <p className="text-gray-700 leading-relaxed">{getText(dept.vision)}</p>
@@ -114,10 +114,10 @@ const DepartmentDetail = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="bg-orange-50/60 border-l-4 border-amber-500 rounded-r-2xl p-6 md:p-8"
+                            className="bg-emerald-50/60 border-l-4 border-emerald-500 rounded-r-2xl p-6 md:p-8"
                         >
-                            <h2 className="text-xl font-bold text-amber-700 mb-4 flex items-center gap-2">
-                                <span className="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center text-sm">◎</span>
+                            <h2 className="text-xl font-bold text-emerald-800 mb-4 flex items-center gap-2">
+                                <span className="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center text-sm">◎</span>
                                 Department Mission
                             </h2>
                             <p className="text-gray-700 leading-relaxed">{getText(dept.mission)}</p>
@@ -134,7 +134,7 @@ const DepartmentDetail = () => {
                             <ul className="space-y-3">
                                 {getText(dept.outcomes).map((item, i) => (
                                     <li key={i} className="flex items-start gap-3 text-gray-700">
-                                        <span className="mt-1.5 w-2 h-2 rounded-full bg-amber-500 flex-shrink-0" />
+                                        <span className="mt-1.5 w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0" />
                                         {item}
                                     </li>
                                 ))}
@@ -177,7 +177,7 @@ const DepartmentDetail = () => {
                         </div>
 
                         <div className="pt-6">
-                            <Link to="/departments" className="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 font-medium">
+                            <Link to="/departments" className="inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-700 font-medium">
                                 ← Back to all Departments
                             </Link>
                         </div>

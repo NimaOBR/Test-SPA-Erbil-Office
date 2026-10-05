@@ -29,16 +29,16 @@ const FAQ = () => {
           {faqs.map((faq) => (
             <div
               key={faq.id}
-              className="border border-gray-200 rounded-2xl overflow-hidden hover:border-amber-300 transition-colors duration-300"
+              className="border border-gray-200 rounded-2xl overflow-hidden hover:border-emerald-300 transition-colors duration-300"
             >
               <button
                 onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
-                className="w-full flex items-center justify-between px-6 py-5 text-left bg-white hover:bg-amber-50/40 transition-colors"
+                className="w-full flex items-center justify-between px-6 py-5 text-left bg-white hover:bg-emerald-50/40 transition-colors"
               >
                 <span className="font-medium text-gray-800 pr-4">{faq.question}</span>
                 <motion.span
                   animate={{ rotate: openId === faq.id ? 180 : 0 }}
-                  className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center"
+                  className="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />

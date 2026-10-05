@@ -12,7 +12,7 @@ const Activities = () => {
     academic: {
       title: 'Academic Activities',
       icon: '🎓',
-      color: 'text-amber-600',
+      color: 'text-emerald-600',
       description: 'Success stories and academic achievements of our students and graduates',
       items: [
         {
@@ -107,7 +107,7 @@ const Activities = () => {
             >
               Success stories, academic achievements and events of Paitaxt Technical Institute
             </motion.p>
-            <div className="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full" />
+            <div className="w-16 h-1 bg-emerald-500 mx-auto mt-4 rounded-full" />
           </div>
 
           {/* Tabs */}
@@ -118,8 +118,8 @@ const Activities = () => {
                 onClick={() => setActiveTab(key)}
                 className={`px-6 py-3 rounded-xl text-sm font-medium transition-all duration-300 capitalize ${
                   activeTab === key
-                    ? 'bg-amber-500 text-white shadow-lg'
-                    : 'bg-white text-gray-600 hover:bg-amber-50'
+                    ? 'bg-emerald-500 text-white shadow-lg'
+                    : 'bg-white text-gray-600 hover:bg-emerald-50'
                 }`}
               >
                 {t(key)}

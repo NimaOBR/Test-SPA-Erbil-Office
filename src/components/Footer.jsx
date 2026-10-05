@@ -8,21 +8,21 @@ const Footer = () => {
     <footer className="bg-gray-950 text-gray-300 relative border-t border-gray-800/80">
       <div className="max-w-7xl mx-auto px-6 pt-12 pb-16">
         
-        {/* باکس تماس تلفن و ایمیل با بوردر متحرک زرد در ابتدای فوتر */}
+        {/* باکس تماس تلفن و ایمیل با بوردر متحرک سبز در ابتدای فوتر */}
         <div className="mb-14 flex justify-center">
           <div className="relative p-[1.5px] rounded-2xl overflow-hidden w-full max-w-md sm:max-w-2xl">
-            {/* نور چرخان زرد قطاری */}
+            {/* نور چرخان سبز قطاری */}
             <div
               className="absolute inset-[-100%] animate-[spin_4s_linear_infinite]"
               style={{
-                background: 'conic-gradient(from 0deg, transparent 0 310deg, #f59e0b 360deg)',
+                background: 'conic-gradient(from 0deg, transparent 0 310deg, #10b981 360deg)',
               }}
             />
             {/* هاله نور بلوری */}
             <div
               className="absolute inset-[-100%] animate-[spin_4s_linear_infinite] blur-sm opacity-60"
               style={{
-                background: 'conic-gradient(from 0deg, transparent 0 310deg, #fbbf24 360deg)',
+                background: 'conic-gradient(from 0deg, transparent 0 310deg, #34d399 360deg)',
               }}
             />
 
@@ -33,7 +33,7 @@ const Footer = () => {
                 href="tel:07508567733" 
                 className="flex items-center gap-3 group hover:opacity-90 transition-opacity"
               >
-                <div className="w-9 h-9 sm:w-10 sm:h-10 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center flex-shrink-0 border border-amber-500/20 group-hover:scale-105 transition-transform">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center flex-shrink-0 border border-emerald-500/20 group-hover:scale-105 transition-transform">
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div>
@@ -50,7 +50,7 @@ const Footer = () => {
                 href="mailto:Info@paytakhtinstitute.com" 
                 className="flex items-center gap-3 min-w-0 group hover:opacity-90 transition-opacity"
               >
-                <div className="w-9 h-9 sm:w-10 sm:h-10 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center flex-shrink-0 border border-amber-500/20 group-hover:scale-105 transition-transform">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center flex-shrink-0 border border-emerald-500/20 group-hover:scale-105 transition-transform">
                   <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div className="min-w-0">
@@ -69,8 +69,8 @@ const Footer = () => {
           
           {/* ستون آدرس و نقشه */}
           <div className="space-y-4">
-            <h3 className="text-amber-400 font-semibold text-lg flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-amber-400" />
+            <h3 className="text-emerald-400 font-semibold text-lg flex items-center gap-2">
+              <MapPin className="w-5 h-5 text-emerald-400" />
               {t('location')}
             </h3>
             <div className="rounded-2xl overflow-hidden border border-gray-800 shadow-xl relative group">
@@ -92,8 +92,8 @@ const Footer = () => {
 
           {/* ستون دپارتمان‌ها */}
           <div>
-            <h3 className="text-amber-400 font-semibold text-lg mb-4 flex items-center gap-2">
-              <Building2 className="w-5 h-5 text-amber-400" />
+            <h3 className="text-emerald-400 font-semibold text-lg mb-4 flex items-center gap-2">
+              <Building2 className="w-5 h-5 text-emerald-400" />
               {t('departments')}
             </h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-2.5 text-sm">
@@ -108,8 +108,8 @@ const Footer = () => {
                 t('agricultural')
               ].map((item) => (
                 <li key={item}>
-                  <a href="#departments" className="hover:text-amber-400 transition-colors flex items-center gap-2 text-gray-400 hover:translate-x-1 duration-200">
-                    <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                  <a href="#departments" className="hover:text-emerald-400 transition-colors flex items-center gap-2 text-gray-400 hover:translate-x-1 duration-200">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
                     {item}
                   </a>
                 </li>
@@ -119,8 +119,8 @@ const Footer = () => {
 
           {/* ستون لینک‌های سریع */}
           <div>
-            <h3 className="text-amber-400 font-semibold text-lg mb-4 flex items-center gap-2">
-              <Link2 className="w-5 h-5 text-amber-400" />
+            <h3 className="text-emerald-400 font-semibold text-lg mb-4 flex items-center gap-2">
+              <Link2 className="w-5 h-5 text-emerald-400" />
               {t('quickLinks')}
             </h3>
             <ul className="space-y-2.5 text-sm">
@@ -132,8 +132,8 @@ const Footer = () => {
                 { name: t('contact'), href: '/contact' },
               ].map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="hover:text-amber-400 transition-colors flex items-center gap-2 text-gray-400 hover:translate-x-1 duration-200">
-                    <ChevronRight className="w-3.5 h-3.5 text-amber-500" />
+                  <a href={link.href} className="hover:text-emerald-400 transition-colors flex items-center gap-2 text-gray-400 hover:translate-x-1 duration-200">
+                    <ChevronRight className="w-3.5 h-3.5 text-emerald-500" />
                     {link.name}
                   </a>
                 </li>
@@ -148,7 +148,7 @@ const Footer = () => {
       <div className="border-t border-gray-900 bg-black/40">
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-sm text-gray-500">
           <p>{t('allRights')}</p>
-          <p className="text-amber-500 font-semibold tracking-wide">په‌‌یمانگه‌ی ته‌کنیکی پایته‌خت</p>
+          <p className="text-emerald-500 font-semibold tracking-wide">په‌‌یمانگه‌ی ته‌کنیکی پایته‌خت</p>
         </div>
       </div>
     </footer>

@@ -23,9 +23,9 @@ const Units = () => {
   return (
     <div className="pt-32 pb-20 bg-gray-50 min-h-screen">
       <SEO 
-      title="Units of the Institute"
-      description="Administrative and support units of Paitaxt Technical Institute including Registration, Quality Assurance, Library, Media and more."
-    />
+        title="Units of the Institute"
+        description="Administrative and support units of Paitaxt Technical Institute including Registration, Quality Assurance, Library, Media and more."
+      />
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
           <motion.h1
@@ -43,7 +43,7 @@ const Units = () => {
           >
             {t('unitsSubtitle')}
           </motion.p>
-          <div className="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full" />
+          <div className="w-16 h-1 bg-emerald-500 mx-auto mt-4 rounded-full" />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -65,7 +65,7 @@ const Units = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/30 group-hover:from-black/90 transition-all duration-300" />
               <div className="absolute inset-0 flex flex-col items-center justify-center p-5 text-center">
-                <div className="w-14 h-14 rounded-full bg-amber-500 flex items-center justify-center text-2xl mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-2xl mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
                   {unit.icon}
                 </div>
                 <h3 className="text-white font-semibold text-lg leading-tight drop-shadow-md">

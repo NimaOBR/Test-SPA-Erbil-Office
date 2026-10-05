@@ -96,7 +96,7 @@ const Departments = () => {
           >
             {t('departmentsSubtitle') || 'Paitax Technical Institute offers the following departments'}
           </motion.p>
-          <div className="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full" />
+          <div className="w-16 h-1 bg-emerald-500 mx-auto mt-4 rounded-full" />
         </div>
 
         {/* Grid */}
@@ -124,7 +124,7 @@ const Departments = () => {
 
                 {/* Content */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-5 text-center">
-                  <div className="w-14 h-14 rounded-full bg-amber-500/90 flex items-center justify-center text-2xl mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-14 h-14 rounded-full bg-emerald-500/90 flex items-center justify-center text-2xl mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
                     {dept.icon}
                   </div>
                   <h3 className="text-white font-semibold text-lg leading-tight drop-shadow-md">
