@@ -40,7 +40,7 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50">
       
       {/* ========== TOP BAR ========== */}
-      <div className="bg-gradient-to-r from-emerald-600 via-green-500 to-emerald-600 text-white text-sm shadow-sm">
+      <div className="bg-gradient-to-r from-yellow-500 via-green-500 to-emerald-600 text-white text-sm shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex flex-wrap items-center justify-between gap-y-2">
           
           {/* Left */}

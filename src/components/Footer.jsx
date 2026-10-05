@@ -33,7 +33,7 @@ const Footer = () => {
                 href="tel:0750 424 3524" 
                 className="flex items-center gap-3 group hover:opacity-90 transition-opacity"
               >
-                <div className="w-9 h-9 sm:w-10 sm:h-10 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center flex-shrink-0 border border-emerald-500/20 group-hover:scale-105 transition-transform">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 bg-emerald-500/10 text-yellow-400 rounded-xl flex items-center justify-center flex-shrink-0 border border-emerald-500/20 group-hover:scale-105 transition-transform">
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div>
@@ -50,7 +50,7 @@ const Footer = () => {
                 href="mailto:Info@paytakhtinstitute.com" 
                 className="flex items-center gap-3 min-w-0 group hover:opacity-90 transition-opacity"
               >
-                <div className="w-9 h-9 sm:w-10 sm:h-10 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center flex-shrink-0 border border-emerald-500/20 group-hover:scale-105 transition-transform">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 bg-emerald-500/10 text-yellow-400 rounded-xl flex items-center justify-center flex-shrink-0 border border-emerald-500/20 group-hover:scale-105 transition-transform">
                   <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div className="min-w-0">
@@ -69,7 +69,7 @@ const Footer = () => {
           
           {/* ستون آدرس و نقشه */}
           <div className="space-y-4">
-            <h3 className="text-emerald-400 font-semibold text-lg flex items-center gap-2">
+            <h3 className="text-yellow-400 font-semibold text-lg flex items-center gap-2">
               <MapPin className="w-5 h-5 text-emerald-400" />
               {t('location')}
             </h3>
@@ -92,7 +92,7 @@ const Footer = () => {
 
           {/* ستون دپارتمان‌ها */}
           <div>
-            <h3 className="text-emerald-400 font-semibold text-lg mb-4 flex items-center gap-2">
+            <h3 className="text-yellow-400 font-semibold text-lg mb-4 flex items-center gap-2">
               <Building2 className="w-5 h-5 text-emerald-400" />
               {t('departments')}
             </h3>
@@ -119,7 +119,7 @@ const Footer = () => {
 
           {/* ستون لینک‌های سریع */}
           <div>
-            <h3 className="text-emerald-400 font-semibold text-lg mb-4 flex items-center gap-2">
+            <h3 className="text-yellow-400 font-semibold text-lg mb-4 flex items-center gap-2">
               <Link2 className="w-5 h-5 text-emerald-400" />
               {t('quickLinks')}
             </h3>
