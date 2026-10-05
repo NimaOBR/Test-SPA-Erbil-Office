@@ -30,7 +30,7 @@ const Footer = () => {
             <div className="relative z-10 bg-gray-900/90 backdrop-blur-xl px-5 py-3.5 sm:px-8 sm:py-4 rounded-[15px] flex flex-row items-center justify-between sm:justify-around gap-4 text-white">
               {/* لینک تلفن */}
               <a 
-                href="tel:07508567733" 
+                href="tel:0750 424 3524" 
                 className="flex items-center gap-3 group hover:opacity-90 transition-opacity"
               >
                 <div className="w-9 h-9 sm:w-10 sm:h-10 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center flex-shrink-0 border border-emerald-500/20 group-hover:scale-105 transition-transform">

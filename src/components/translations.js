@@ -32,7 +32,7 @@ export const translations = {
     faq4q: "How many departments are available at the institute?",
     faq4a: "Currently, Paitax Technical Institute offers 9 specialized departments covering health, technology, business, and engineering fields.",
     faq5q: "How can I contact the Institute?",
-    faq5a: "You can call us at 07508567733, email Info@paytakhtinstitute.com, or visit our campus at German Bazar, Erbil.",
+    faq5a: "You can call us at +964 750 424 3524, email Info@paytakhtinstitute.com, or visit our campus at German Bazar, Erbil.",
     faq6q: "Is it a governmental institute?",
     faq6a: "No, Paitax Technical Institute is a private technical institute officially authorized by the Ministry of Higher Education and Scientific Research.",
     // Stats
@@ -161,7 +161,7 @@ story6Excerpt: "A group of our Emergency Nursing students organized a free healt
     faq4q: "كم عدد الأقسام المتوفرة في المعهد؟",
     faq4a: "حاليًا يقدم معهد بايتاخت التقني 9 أقسام متخصصة تغطي الصحة والتكنولوجيا والأعمال والهندسة.",
     faq5q: "كيف يمكنني التواصل مع المعهد؟",
-    faq5a: "يمكنك الاتصال على 07508567733 أو الإيميل Info@paytakhtinstitute.com أو زيارة الحرم الجامعي في بازار الألماني، أربيل.",
+    faq5a: "يمكنك الاتصال على +964 750 424 3524 أو الإيميل Info@paytakhtinstitute.com أو زيارة الحرم الجامعي في بازار الألماني، أربيل.",
     faq6q: "هل هو معهد حكومي؟",
     faq6a: "لا، معهد بايتاخت التقني هو معهد خاص معتمد رسميًا من وزارة التعليم العالي والبحث العلمي.",
     teachers: "عدد المدرسين",

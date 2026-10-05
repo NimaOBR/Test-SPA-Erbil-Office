@@ -132,7 +132,7 @@ const Navbar = () => {
 
             {/* Phone + Email */}
             <a
-              href="tel:07508567733"
+              href="tel:0750 424 3524"
               className="flex items-center gap-2 font-medium hover:opacity-90 transition-opacity group"
             >
               <span className="w-7 h-7 rounded-full bg-white/20 group-hover:bg-white/30 flex items-center justify-center transition-colors">

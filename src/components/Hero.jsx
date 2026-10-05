@@ -136,7 +136,7 @@ const Hero = () => {
 
             {/* لینک مستقیم تماس تلفنی */}
             <a
-              href="tel:07504243524"
+              href="tel:0750 424 3524"
               className="flex items-center gap-3 w-full sm:w-auto justify-start sm:justify-center hover:opacity-85 transition-opacity whitespace-nowrap"
             >
               <div className="w-9 h-9 sm:w-10 sm:h-10 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center flex-shrink-0 border border-emerald-500/20">
