@@ -28,7 +28,6 @@ const Navbar = () => {
       path: '/activities',
       dropdown: [
         { name: t('academicActivities'), path: '/activities/academic' },
-
       ],
     },
     { name: t('contact'), path: '/contact' },
@@ -166,17 +165,18 @@ const Navbar = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
               <div className="relative">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-emerald-500 via-green-600 to-teal-700 flex items-center justify-center shadow-lg shadow-emerald-200 group-hover:shadow-emerald-300 transition-shadow duration-300">
-                  <span className="text-white font-black text-sm tracking-tighter">PTI</span>
-                </div>
-                <div className="absolute -inset-1 rounded-full border-2 border-emerald-300/50 group-hover:border-emerald-400 transition-colors duration-300"></div>
+                <img 
+                  src="/logo2.png" 
+                  alt="PAYTAKHT Logo" 
+                  className="w-15 h-15 object-contain rounded-full shadow-md transition-transform duration-300 group-hover:scale-105"
+                />
               </div>
               <div className="hidden sm:block">
                 <div className="font-bold text-gray-900 text-[15px] leading-tight tracking-tight group-hover:text-emerald-600 transition-colors">
-                  PAITAXT
+                  Paytakht
                 </div>
                 <div className="text-[11px] text-gray-500 font-medium tracking-wide">
-                  Technical Institute
+                  Technical Institute - Private
                 </div>
               </div>
             </Link>
