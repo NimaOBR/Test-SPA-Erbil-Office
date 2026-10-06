@@ -1,9 +1,36 @@
 import { useLanguage } from '../hooks/useLanguage';
 import { MapPin, Building2, Link2, Phone, Mail, ChevronRight } from 'lucide-react';
-import { Link } from 'react-router-dom'; // یا 'next/link' برای Next.js
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const { t } = useLanguage();
+
+  // تابع هدایت صفحه به بالاترین نقطه
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  const quickLinks = [
+    { name: t('home'), href: '/' },
+    { name: t('aboutInstitute'), href: '/about' },
+    { name: t('departmentsOfInstitute'), href: '/departments' },
+    { name: t('activitiesOfAcademics'), href: '/activities' },
+    { name: t('contact'), href: '/contact' },
+  ];
+
+  const departmentList = [
+    t('pharmacy'),
+    t('pathological'),
+    t('nursing'),
+    t('computerNetworking'),
+    t('englishLanguage'),
+    t('businessAdmin'),
+    t('electricity'),
+    t('agricultural'),
+  ];
 
   return (
     <footer className="bg-gray-950 text-gray-300 relative border-t border-gray-800/80">
@@ -31,7 +58,7 @@ const Footer = () => {
             <div className="relative z-10 bg-gray-900/90 backdrop-blur-xl px-5 py-3.5 sm:px-8 sm:py-4 rounded-[15px] flex flex-row items-center justify-between sm:justify-around gap-4 text-white">
               {/* لینک تلفن */}
               <a
-                href="tel:0750 424 3524"
+                href="tel:07504243524"
                 className="flex items-center gap-3 group hover:opacity-90 transition-opacity"
               >
                 <div className="w-9 h-9 sm:w-10 sm:h-10 bg-emerald-500/10 text-yellow-400 rounded-xl flex items-center justify-center flex-shrink-0 border border-emerald-500/20 group-hover:scale-105 transition-transform">
@@ -82,6 +109,7 @@ const Footer = () => {
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
+                title="Institute Location Map"
                 className="grayscale group-hover:grayscale-0 transition-all duration-500"
               ></iframe>
             </div>
@@ -98,21 +126,16 @@ const Footer = () => {
               {t('departments')}
             </h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-2.5 text-sm">
-              {[
-                t('pharmacy'),
-                t('pathological'),
-                t('nursing'),
-                t('computerNetworking'),
-                t('englishLanguage'),
-                t('businessAdmin'),
-                t('electricity'),
-                t('agricultural')
-              ].map((item) => (
-                <li key={item}>
-                  <a href="#departments" className="hover:text-emerald-400 transition-colors flex items-center gap-2 text-gray-400 hover:translate-x-1 duration-200">
+              {departmentList.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    to="/departments"
+                    onClick={scrollToTop}
+                    className="hover:text-emerald-400 transition-colors flex items-center gap-2 text-gray-400 hover:translate-x-1 duration-200"
+                  >
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -125,17 +148,11 @@ const Footer = () => {
               {t('quickLinks')}
             </h3>
             <ul className="space-y-2.5 text-sm">
-              {[
-                { name: t('home'), href: '/' },
-                { name: t('aboutInstitute'), href: '/about' },
-                { name: t('departmentsOfInstitute'), href: '/departments' },
-                { name: t('activitiesOfAcademics'), href: '/activities' },
-                { name: t('contact'), href: '/contact' },
-              ].map((link) => (
-                <li key={link.name}>
-                  {/* استفاده از Link به جای a و to به جای href */}
+              {quickLinks.map((link) => (
+                <li key={link.href}>
                   <Link
-                    to={link.href} // اگر Next.js است از href={link.href} استفاده کنید
+                    to={link.href}
+                    onClick={scrollToTop}
                     className="hover:text-emerald-400 transition-colors flex items-center gap-2 text-gray-400 hover:translate-x-1 duration-200"
                   >
                     <ChevronRight className="w-3.5 h-3.5 text-emerald-500" />
