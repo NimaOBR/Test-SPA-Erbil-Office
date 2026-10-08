@@ -51,7 +51,7 @@ const Navbar = () => {
               {[
                 { icon: 'facebook', href: '#' },
                 { icon: 'instagram', href: '#' },
-                { icon: 'mail', href: 'mailto:Info@paytakhtinstitute.con' },
+                { icon: 'mail', href: 'mailto:Info@paytakhtinstitute.com' },
                 { icon: 'location', href: '#location' },
               ].map((item) => (
                 <a
@@ -143,7 +143,7 @@ const Navbar = () => {
             </a>
 
             <a
-              href="mailto:Info@paytakhtinstitute.con"
+              href="mailto:Info@paytakhtinstitute.com"
               className="flex items-center gap-2 font-medium hover:opacity-90 transition-opacity group"
             >
               <span className="w-7 h-7 rounded-full bg-white/20 group-hover:bg-white/30 flex items-center justify-center transition-colors">
@@ -151,7 +151,7 @@ const Navbar = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </span>
-              <span className="hidden md:inline tracking-wide">Info@paytakhtinstitute.con</span>
+              <span className="hidden md:inline tracking-wide">Info@paytakhtinstitute.com</span>
             </a>
           </div>
         </div>
